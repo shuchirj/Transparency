@@ -1,0 +1,49 @@
+[
+    {
+        "name": "MyT1D",
+        "description": "A mobile application to help type 1 diabetic patients manage their diabetes easier.",
+        "github": "//github.com/CoolCoderSJ/MyT1D"
+    },
+
+    {
+        "name": "Crinkle",
+        "description": "Another feature rich URL shortener.",
+        "github": "//github.com/CoolCoderSJ/Crinkle"
+    },
+
+    {
+        "name": "Replit CLI",
+        "description": "A CLI application to connect to Replit.",
+        "github": "//github.com/CoolCoderSJ/replit-cli"
+    },
+
+    {
+        "name": "Replit Oauth",
+        "description": "An unofficial third-party oauth imitation for Replit.",
+        "github": "//github.com/CoolCoderSJ/replit-oauth"
+    },
+
+    {
+        "name": "Climalearn",
+        "description": "soon™",
+        "github": "#"
+    },
+
+    {
+        "name": "SearchDeck",
+        "description": "A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.",
+        "github": "//github.com/CoolCoderSJ/SearchDeck"
+    },
+
+    {
+        "name": "Token Revoker",
+        "description": "A discord bot that continuously scans the server for leaked discord bot tokens and slack tokens and automatically revokes them.",
+        "github": "//github.com/CoolCoderSJ/TokenRevoker"
+    },
+
+    {
+        "name": "Reflux Marketplace",
+        "description": "The marketplace for the popular Replit theming extension, Reflux.",
+        "github": "//github.com/frissyn/Reflux"
+    }
+]
