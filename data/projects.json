@@ -1,5 +1,11 @@
 [
     {
+        "name": "Climalearn",
+        "description": "Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it.",
+        "github": "//github.com/CoolCoderSJ/Climalearn"
+    },
+    
+    {
         "name": "MyT1D",
         "description": "A mobile application to help type 1 diabetic patients manage their diabetes easier.",
         "github": "//github.com/CoolCoderSJ/MyT1D"
@@ -21,12 +27,6 @@
         "name": "Replit Oauth",
         "description": "An unofficial third-party oauth imitation for Replit.",
         "github": "//github.com/CoolCoderSJ/replit-oauth"
-    },
-
-    {
-        "name": "Climalearn",
-        "description": "soon™",
-        "github": "#"
     },
 
     {
