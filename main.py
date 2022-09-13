@@ -7,6 +7,10 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/extras")
+def extras():
+    return render_template("guides.html")
+
 @app.route("/projects")
 def projects():
     data = json.loads(open("data/projects.json").read())
