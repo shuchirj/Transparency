@@ -58,3 +58,7 @@ article header {
 article a {
     text-decoration: none;
 }
+
+.certifications p {
+    margin-bottom: 1rem;
+}
