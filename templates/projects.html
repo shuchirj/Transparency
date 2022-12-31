@@ -27,12 +27,26 @@
                 <h1>My Projects</h1>
                 <p>Everything I work on that's worth showing off is here.</p>
                 <div style="text-align: left;">
-                    {% for project in data %}
+                  <h3>Hardware Projects</h3>
+                  {% for project in data['hardware'] %}
                     <article>
                         <header><h4>{{ project['name'] }}</h4></header>
                         {{ project['description'] }}
                         <br><br>
-                        <a href="{{ project['github'] }}"><i data-feather="github"></i> View on Github</a>
+                        <div style="display: flex; gap: 25px;">
+                            <a target="_blank" href="{{ project['github'] }}"><i data-feather="github"></i> View on Github</a> {%for link in project['otherLinks']%} <a target="_blank" href="{{ link['loc'] }}"><i data-feather="{{ link['icon'] }}"></i> {{ link['text'] }} </a> {%endfor%}
+                        </div>
+                      </article>
+                      {% endfor %}
+                  <h3>Software Projects</h3>
+                    {% for project in data['software'] %}
+                    <article>
+                        <header><h4>{{ project['name'] }}</h4></header>
+                        {{ project['description'] }}
+                        <br><br>
+                        <div style="display: flex; gap: 25px;">
+                            <a target="_blank" href="{{ project['github'] }}"><i data-feather="github"></i> View on Github</a> {%for link in project['otherLinks']%} <a target="_blank" href="{{ link['loc'] }}"><i data-feather="{{ link['icon'] }}"></i> {{ link['text'] }} </a> {%endfor%}
+                        </div>
                       </article>
                       {% endfor %}
                 </div>

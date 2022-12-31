@@ -59,6 +59,14 @@ article a {
     text-decoration: none;
 }
 
-.certifications p {
-    margin-bottom: 1rem;
+.category p {
+    margin-bottom: 0.5rem;
+}
+
+.category h4 {
+    margin-bottom: 0.75rem;
+}
+
+.category {
+    margin-bottom: 25px;
 }
