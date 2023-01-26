@@ -13,15 +13,23 @@
     ],
     "software": [
         {
+            "name": "SearchDeck",
+            "description": "A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.",
+            "github": "//github.com/CoolCoderSJ/SearchDeck",
+            "otherLinks": [
+                {
+                    "text": "Visit Live Instance",
+                    "loc": "//searchdeck.coolcodersj.repl.co",
+                    "icon": "globe"
+                }
+            ]
+        },
+        
+        {
             "name": "Climalearn",
             "description": "Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it.",
             "github": "//github.com/CoolCoderSJ/Climalearn",
             "otherLinks": [
-                {
-                    "text": "Visit Live Instance",
-                    "loc": "//climalearn.loophole.site",
-                    "icon": "globe"
-                }
             ]
         },
         
@@ -36,11 +44,6 @@
             "description": "Another feature rich URL shortener.",
             "github": "//github.com/CoolCoderSJ/Crinkle",
             "otherLinks": [
-                {
-                    "text": "Visit Live Instance",
-                    "loc": "//crkl.ml",
-                    "icon": "globe"
-                }
             ]
         },
     
@@ -66,19 +69,6 @@
                     "text": "Visit Docs",
                     "loc": "//replit-oauth.readme.io",
                     "icon": "book"
-                }
-            ]
-        },
-    
-        {
-            "name": "SearchDeck",
-            "description": "A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.",
-            "github": "//github.com/CoolCoderSJ/SearchDeck",
-            "otherLinks": [
-                {
-                    "text": "Visit Live Instance",
-                    "loc": "//searchdeck.coolcodersj.repl.co",
-                    "icon": "globe"
                 }
             ]
         },
