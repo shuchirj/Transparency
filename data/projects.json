@@ -13,6 +13,30 @@
     ],
     "software": [
         {
+            "name": "StudentMate",
+            "description": "An AI-powered homework assistant. StudentMate finds assignments from your LMS using AI and adds them to a todo list.",
+            "github": "//github.com/CoolCoderSJ/StudentMate",
+            "otherLinks": [
+                {
+                    "text": "Visit Live Instance",
+                    "loc": "//studentmate.shuchir.dev",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
+            "name": "WheresMyFlight",
+            "description": "Another flight tracker.",
+            "github": "//github.com/CoolCoderSJ/WheresMyFlight",
+            "otherLinks": [
+                {
+                    "text": "Visit Live Instance",
+                    "loc": "//wheresmyflight-ui.shuchir.dev",
+                    "icon": "globe"
+                }
+            ]
+        },
+        {
             "name": "SearchDeck",
             "description": "A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.",
             "github": "//github.com/CoolCoderSJ/SearchDeck",
