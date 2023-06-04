@@ -7,6 +7,11 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/old")
+def old():
+    return render_template("old.html")
+
+
 @app.route("/extras")
 def extras():
     return render_template("guides.html")
@@ -14,11 +19,6 @@ def extras():
 @app.route("/desecurly")
 def desecurly():
     return render_template("desecurly.html")
-
-@app.route("/projects")
-def projects():
-    data = json.loads(open("data/projects.json").read())
-    return render_template("projects.html", data=data)
 
 @app.route("/resume")
 def resume():
