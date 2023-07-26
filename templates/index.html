@@ -1,397 +1,218 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="winter">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shuchir Jain</title>
-    <script defer data-domain="shuchir.dev" src="https://plausible.shuchir.dev/js/script.outbound-links.js"></script>
-    <script async src="https://umami.shuchir.dev/script.js" data-website-id="f8f5f396-6e1c-47c4-b966-d295c71a76de"></script>
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link rel="canonical" href="https://shuchir.dev/" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.0.3/dist/full.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="/static/script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <style>
-      figure img {
-        width: 50px;
-      }
-    </style>
+    <style>html {scroll-behavior: smooth;}</style>
+    <link rel="stylesheet" href="/static/style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="navbar bg-base-100" style="position: fixed; top: 0; z-index: 999;">
-        <div class="flex-1">
-          <a class="btn btn-ghost normal-case text-xl" href="#" onclick="lenis.scrollTo('#')">Shuchir Jain</a>
-        </div>
-        <div class="flex-none">
-          <ul class="menu menu-horizontal px-1">
-            <li><a href="#work" onclick="lenis.scrollTo('#work')">Work</a></li>
-            <li><a href="#projects" onclick="lenis.scrollTo('#projects')">Projects</a></li>
-            <li><a href="#skills" onclick="lenis.scrollTo('#skills')">Skills</a></li>
-            <li><a href="https://shuchir.dev/resume">Resume</a></li>
-            <li><a href="https://photography.shuchir.dev" target="_blank">Photography</a></li>
-            <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact and Socials</a></li>
-          </ul>
-        </div>
-      </div>
-
-    <div class="hero min-h-screen bg-base-100">
-        <div class="hero-content flex-col lg:flex-row-reverse">
-            <img src="https://avatars.githubusercontent.com/u/53063247?v=4" class="rounded-xl shadow-2xl w-60 animate__animated animate__fadeInRight" />
-            <div class="lg:mr-64">
-                <h1 class="text-5xl font-bold animate__animated animate__fadeInLeft">Hi, I'm <span class="text-5xl font-bold text-primary">Shuchir Jain</span></h1>
-                <p class="py-6 animate__animated animate__fadeInLeft">An avid developer interested in engineering, photography, and more.</p>
+    <section class="sectionhead">
+        <div class="head">
+            <img src="https://avatars.githubusercontent.com/u/53063247?v=4" class="pfp">
+            <div class="subhead">
+                <h1>Shuchir Jain</h1>
+                <h3>An avid developer interested in engineering and photography. <a href="/resume" target="_blank">View My Resume <i class="fa-solid fa-arrow-right tilt"></i></a></h3>
             </div>
         </div>
-    </div>
 
-    <div class="hero min-h-screen bg-base-200 pt-16" id="work">
-        <div class="hero-content text-center">
-          <div>
-            <h1 class="text-5xl font-bold">Work</h1>
-            <p class="py-6">Here's everything I've done so far.</p>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" style="text-align: left;">
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Mathlings</h2>
-                    <h6><i>Administrative Officer, Director of Summer Camps, Curriculum Writer, In-Person Classes Coordinator</i></h6>
-                    <p>At Mathlings, I've managed emails, organized in-person classes at schools, written curriculum, taught many classes, and helped wherever necessary.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Mathlings" class="btn btn-primary" href="//mathlings.org" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Palettech</h2>
-                    <h6><i>Co-Founder, Co-COO</i></h6><br><br>
-                    <p>At Palettech, I've helped maintain and build websites for people who need them, among other things.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Palettech" class="btn btn-primary" href="//palettech.org" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Chesspire</h2>
-                    <h6><i>CTO</i></h6><br><br>
-                    <p>At Chesspire, I've maintained the website and helped out with other technical work.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Chesspire" class="btn btn-primary" href="//chesspire.org" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Steel City Codes</h2>
-                    <h6><i>Volunteer</i></h6><br><br>
-                    <p>At SCC, I've taught principles of programming to many students across different schools.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="SCC" class="btn btn-primary" href="//steelcitycodes.org" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Code4Cures</h2>
-                    <h6><i>Co-Founder, President</i></h6><br><br>
-                    <p>I helped start and am currently planning one of the only in-person hackathons in Pittsburgh (PA, USA).</p>
-                    <div class="card-actions justify-end">
-                        <a class="btn btn-secondary btn-disabled" target="_blank">Website Coming Soon</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Project Water</h2>
-                    <h6><i>No official title</i></h6><br><br>
-                    <p>I helped Project Water automate the scheduling for over 600 games throughout the day, and provided the schedule platform for players.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Project Water" class="btn btn-primary" href="//projectwater.org" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-            </div>
-          </div>
+        <div class="socials">
+            <a href="mailto:hi@shuchir.dev" target="_blank"><i class="fa-regular fa-envelope"></i> hi@shuchir.dev</a>
+            <a href="//github.com/CoolCoderSJ" target="_blank"><i class="fa-brands fa-github"></i> @CoolCoderSJ</a>
+            <a href="//discord.com/users/744921397582888991" target="_blank"><i class="fa-brands fa-discord"></i> @snoweo</a>
+            <a href="//matrix.to/#/@coolcodersj:beeper.com" target="_blank"><span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Matrix_icon.svg/768px-Matrix_icon.svg.png?20210502154855" class="matrix-icon"></span> @coolcodersj:beeper.com</a>
+            <a href="//reddit.com/u/Eastern_Ad_8773" target="_blank"><i class="fa-brands fa-reddit-alien"></i> u/Eastern_Ad_8773</a>
+            <a href="//producthunt.com/@coolcodersj" target="_blank"><i class="fa-brands fa-product-hunt"></i> @coolcodersj</a>
         </div>
-      </div>
+    </section>
 
-
-      <div class="hero min-h-screen bg-base-300 pt-24" id="projects">
-        <div class="hero-content text-center">
-          <div>
-            <h1 class="text-5xl font-bold">Projects</h1>
-            <p class="py-6">Here's everything I work on in my free time. Some are side projects, some are full-fledged services.</p>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" style="text-align: left;">
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">PicoPasswds</h2>
-                    <p>An experiment in cybersecurity. When you insert a raspberry pi pico (or a rubber ducky) into a laptop with this script, the script automatically grabs your chrome passwords, decrypts them, and sends them to me in a notification.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="PicoPasswds - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/Self-Destructing-Passwords" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">StudentMate</h2>
-                    <p>An AI-powered homework assistant. StudentMate finds assignments from your LMS using AI and adds them to a todo list.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="StudentMate - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/StudentMate" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> <a data-umami-event="outbound-link" data-umami-event-link="StudentMate - Live" class="btn btn-primary" href="https://studentmate.shuchir.dev/" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">WheresMyFlight</h2>
-                    <p>Another flight tracker.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="WMF - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/WheresMyFlight" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> <a data-umami-event="outbound-link" data-umami-event-link="WMF - Live" class="btn btn-primary" href="//wheresmyflight-ui.shuchir.dev" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">SearchDeck</h2>
-                    <p>A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="SearchDeck - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/SearchDeck" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> <a data-umami-event="outbound-link" data-umami-event-link="SearchDeck - Live" class="btn btn-primary" href="//searchdeck.coolcodersj.repl.co" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Climalearn</h2>
-                    <p>Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Climalearn - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/Climalearn" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">MyT1D</h2>
-                    <p>A mobile application to help type 1 diabetic patients manage their diabetes easier.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="MyT1D - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/MyT1D" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> 
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Crinkle</h2>
-                    <p>Another feature rich URL shortener.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Crinkle - Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/Crinkle" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> 
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Replit CLI</h2>
-                    <p>A CLI application to connect to Replit.</p>
-                    <div class="card-actions justify-end">
-                        <a  data-umami-event="outbound-link" data-umami-event-link="Replit CLI Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/replit-cli" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> <a data-umami-event="outbound-link" data-umami-event-link="Replit CLI Docs" class="btn btn-primary" href="//replitcli.repl.co" target="_blank">Visit Docs</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Replit Oauth</h2>
-                    <p>An unofficial third-party oauth imitation for Replit.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Replit Oauth Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/replit-oauth" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a> <a data-umami-event="outbound-link" data-umami-event-link="Replit Oauth Docs" class="btn btn-primary" href="//replit-oauth.readme.io" target="_blank">Visit Docs</a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Token Revoker</h2>
-                    <p>A discord bot that continuously scans the server for leaked discord bot tokens and slack tokens and automatically revokes them.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="TokenRevoker Github" class="btn btn-neutral" href="https://github.com/CoolCoderSJ/TokenRevoker" target="_blank"><img src="https://static-00.iconduck.com/assets.00/github-icon-256x249-eb1fu3cu.png" style="width: 20px;"></a>
-                    </div>
-                    </div>
-                </div>
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <div class="card-body">
-                    <h2 class="card-title">Reflux Marketplace</h2>
-                    <p>The marketplace for the popular Replit theming extension, Reflux.</p>
-                    <div class="card-actions justify-end">
-                        <a data-umami-event="outbound-link" data-umami-event-link="Reflux marketplace" class="btn btn-primary" href="https://market.reflux.repl.co" target="_blank">Visit</a>
-                    </div>
-                    </div>
-                </div>
-
+    <section class="section">
+        <h1>Volunteer Work</h1>
+        <h3>I am an active volunteer at many places.</h3>
+        <br><br>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('https://industeeltech.org/images/logo.png');"></div>
+            <div>
+                <h2>IndusteelTech</h2>
+                <h4>Co-Founder, Co-CEO, CTO, CFO</h4>
+                <p>At IndusteelTech, we strive to help underrepresented areas in cities with STEM driven solutions. We're currently planning our first hackathon, <a href="//hackthegrid.industeeltech.org" target="_blank">Hack The Grid</a>.</p>
+                <a href="//industeeltech.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
             </div>
-          </div>
         </div>
-      </div>
-
-
-      <div class="hero min-h-screen bg-base-200 pt-16" id="skills">
-        <div class="hero-content text-center">
-          <div>
-            <h1 class="text-5xl font-bold">Skills</h1>
-            <p class="py-6">Here's everything I'm comfortable with and have used before.</p>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" style="text-align: left;">
-
-                <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://logodownload.org/wp-content/uploads/2019/10/python-logo-2.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Python</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">JavaScript</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Web Languages</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://cdn.icon-icons.com/icons2/3913/PNG/512/flask_logo_icon_248540.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Flask</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">React/React Native</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/2560px-Bootstrap_logo.svg.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Bootstrap</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://static-00.iconduck.com/assets.00/bulma-icon-352x512-b0faxtog.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Bulma</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Google_Material_Design_Logo.svg/1024px-Google_Material_Design_Logo.svg.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Material.io</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2048px-Tailwind_CSS_Logo.svg.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">TailwindCSS</h2>
-                    </div>
-                  </div>
-
-                  <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure class="px-10 pt-10">
-                      <img src="https://git-scm.com/images/logos/downloads/Git-Icon-1788C.png" class="rounded-xl" />
-                    </figure>
-                    <div class="card-body items-center text-center">
-                      <h2 class="card-title">Git</h2>
-                    </div>
-                  </div>
-
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('https://junior-birding-society.vercel.app/logo.png');"></div>
+            <div>
+                <h2>Junior Birding Society</h2>
+                <h4>Board Member</h4>
+                <p>The JBS is partenered with the Audubon Society, the largest birding organization in the world. We aim to inspire the science of birding in young children. At the JBS, I help manage logistics, finances, and anything technical.</p>
+                <a href="//junior-birding-society.vercel.app" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
             </div>
-          </div>
         </div>
-      </div>
-
-
-      <div class="hero min-h-screen bg-base-300 pt-16" id="contact">
-        <div class="hero-content text-center">
-          <div>
-            <h1 class="text-5xl font-bold">Contact</h1>
-            <p class="py-6">Say hi!</p>
-            <div class="flex flex-col lg:flex-row justify-center items-center gap-4">
-            <a data-umami-event="outbound-link" data-umami-event-link="contact-email" href="mailto:hi@shuchir.dev">
-              <div class="alert shadow-lg">
-                <ion-icon name="mail-outline" style="font-size: 24px;"></ion-icon>
-                <span>hi@shuchir.dev</span>
-              </div>
-            </a>
-            <a data-umami-event="outbound-link" data-umami-event-link="contact-discord" href="https://discord.com/users/744921397582888991">
-              <div class="alert shadow-lg">
-                <ion-icon name="logo-discord" style="font-size: 24px;"></ion-icon>
-                <span>Snow ⠕#0600</span>
-              </div>
-            </a>
-            <a data-umami-event="outbound-link" data-umami-event-link="contact-github" href="https://github.com/CoolCoderSJ">
-              <div class="alert shadow-lg">
-                <ion-icon name="logo-github" style="font-size: 24px;"></ion-icon>
-                <span>CoolCoderSJ</span>
-              </div>
-            </a>
-	    <a data-umami-event="outbound-link" data-umami-event-link="contact-matrix" href="https://matrix.to/#/@coolcodersj:beeper.com">
-              <div class="alert shadow-lg">
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Matrix_icon.svg/768px-Matrix_icon.svg.png?20210502154855" style="height: 25px">
-		<span>@coolcodersj:beeper.com</span>
-	     </div>
-	    </a>
-              </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/mathlings.svg');"></div>
+            <div>
+                <h2>Mathlings</h2>
+                <h4>Administrative Officer, Director of Summer Camps, Curriculum Writer, In-Person Classes Coordinator</h4>
+                <p>At Mathlings, I've managed emails, organized in-person classes at schools, written curriculum, taught many classes, and helped wherever necessary.</p>
+                <a href="//mathlings.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
             </div>
-          </div>
         </div>
-      </div>
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('https://static.wixstatic.com/media/dac587856ca34b6fb51697ae749cc6b5.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp');"></div>
+            <div>
+                <h2>Palettech</h2>
+                <h4>Co-Founder, Co-COO</h4>
+                <p>At Palettech, I've helped maintain and build websites for people who need them, among other things. Some of our clients include the Peebles District Volunteer Fire Company, Pendemer Productions, and more.</p>
+                <a href="//palettech.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+            </div>
+        </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/chesspire.png'); width: 200px"></div>
+            <div>
+                <h2>Chesspire</h2>
+                <h4>CTO</h4>
+                <p>At Chesspire, I've maintained the website and helped out with other technical work.</p>
+                <a href="//chesspire.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h1>Projects</h1>
+        <h3>Here's everything I've made.</h3>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/picopasswds.png')"></div>
+            <div>
+                <h2>PicoPasswds</h2>
+                <p>An experiment in cybersecurity. When you insert a raspberry pi pico (or a rubber ducky) into a laptop with this script, the script automatically grabs your chrome passwords, decrypts them, and sends them to me in a notification.</p>
+                <a href="//github.com/CoolCoderSJ/Self-Destructing-Passwords" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+            </div>
+        </div>
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('/static/images/pcb.png')"></div>
+            <div>
+                <h2>NFC Business Cards</h2>
+                <p>My first attempt at PCB (printed circuit board) fabrication. The project consists of a business card that uses NFC technology. NFC is near field communication, and it means when the card is tapped to a phone, the phone receives (and might open) a custom link stored on the card. </p>
+                <a href="//oshwlab.com/shuchirj/nfc-business-card" target="_blank">View Schematic and Design <i class="fa-solid fa-arrow-right tilt"></i></a>
+            </div>
+        </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/studentmate.png')"></div>
+            <div>
+                <h2>StudentMate</h2>
+                <p>An AI-powered homework assistant. StudentMate finds assignments from your LMS using AI and adds them to a todo list.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/StudentMate" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a href="//studentmate.shuchir.dev" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/wmf.png')"></div>
+            <div>
+                <h2>WheresMyFlight</h2>
+                <p>Another flight tracker that features offline support, SMS notifications, boarding passes, bag tracking, and live flight tracking.</p>
+            </div>
+        </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/searchdeck.png')"></div>
+            <div>
+                <h2>SearchDeck</h2>
+                <p>A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/SearchDeck" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a href="//searchdeck.coolcodersj.repl.co" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('https://ph-files.imgix.net/35e5f66a-23f7-461e-8d5c-ef8123cb1654.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&fit=max&dpr=1')"></div>
+            <div>
+                <h2>Climalearn</h2>
+                <p>Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it. Aggregates data directly from sources like NASA, NOAA, and Google's Project Sunroof.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/Climalearn" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a href="//climealearn.shuchir.dev" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/myt1d.png')"></div>
+            <div>
+                <h2>MyT1D</h2>
+                <p>A mobile application to help type 1 diabetic patients manage their diabetes easier. Featuring Dexcom integration, meal management and insulin calculation, pen tracking, and more.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/MyT1D" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a href="//github.com/CoolCoderSJ/MyT1D/releases/download/v1.0/MyT1D-bc1868ed908349b0aeba0df5ef3030f3-signed.apk" target="_blank">Install APK (Android) <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org reverse">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/crinkle.svg')"></div>
+            <div>
+                <h2>Crinkle</h2>
+                <p>Another feature rich URL shortener featuring user agent collection/analysis, public pages, a bookmarklet, and more.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/Crinkle" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org">
+            <div class="orgimg" style="background-image: url('https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png'); width: 200px;"></div>
+            <div>
+                <h2>Token Revoker</h2>
+                <p>A discord bot that continuously scans the server for leaked discord bot tokens and slack tokens and automatically revokes them.</p>
+                <div class="socials nopaddingleft">
+                    <a href="//github.com/CoolCoderSJ/TokenRevoker" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h1>Photography</h1>
+        <h3>I don't just code!</h3>
+        <div class="socials nopaddingleft">
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/astro/moon/8.png')"></div>
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/landscapes/7.jpg')"></div>
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/collections/fireworks/1.jpg')"></div>
+        </div>
+        <br>
+        <a href="//photography.shuchir.dev" target="_blank" style="font-size: 1.2em;">View More <i class="fa-solid fa-arrow-right tilt"></i></a>
+    </section>
+
+    <section class="section">
+        <h1>Skills</h1>
+        <h3>Let's talk technical- what can I do?</h3>
+        <br>
+        <h2>Programming</h2>
+        <ul>
+            <li>Languages- Python, Javascript, Web languages</li>
+            <li>Frameworks- Flask, React, React Native, Typer (command line)</li>
+            <li>Familiar with-  Windows (7, 10, 11), Debian-based Linux (Debian, Ubuntu, Zorin), macOS (10.13-13), Android (6-13)</li>
+            <li>Other- serverless development, CRMs, CMSs, git, server management, API development/usage, OAuth 2.0 development/usage, reverse engineering</li>
+        </ul>
+        <br>
+        <h2>Photography</h2>
+        <ul>
+            <li>Different compositions and placements</li>
+            <li>Experienced with manual camera modes</li>
+            <li>Experienced with Adobe Lightroom</li>
+            <li>Experienced with the following types of photography- night/astro, close-up/macro, landscape, nature</li>
+        </ul>
+    </section>
+    
+    <br><br>
 </body>
 </html>

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+h1, h2, h3, h4, h5, h6, p, a, button, a:visited, li {
+    font-family: 'Space Mono', monospace;
+    color: white
+}
+
+html {
+    background-color: #000;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 50px;
+    margin: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.pfp {
+    border-radius: 9999999999999999px;
+    height: 100px;
+}
+
+.head {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    gap: 30px;
+    padding-left: 120px;
+    flex-wrap: wrap;
+}
+
+.matrix-icon {
+    filter: invert(1);
+    height: 20px;
+}
+
+a {
+    text-decoration: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+a:hover {
+    color: #ccc;
+}
+
+a:hover .matrix-icon {
+    filter: invert(0.8);
+}
+
+.sectionhead {
+    height: 50vh;
+}
+
+h1 {
+    margin-bottom: 0px;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 0px;
+}
+
+.section {
+    margin-top: 100px;
+}
+
+.org {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+h4 {
+    margin-top: 0px;
+}
+
+.orgimg {
+    height: 250px;
+    width: 600px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+.tilt {
+    transform: rotate(-45deg);
+}
+
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.nopaddingleft {
+    padding-left: 0px;
+}
+
+.square {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .socials {
+        padding-left: 0px !important;
+        align-items: center;
+        justify-content: center;
+    }
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .volunteerwork {
+        margin-top: 100px;
+    }
+    .org {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .reverse {
+        flex-direction: column;
+    }
+    .orgimg {
+        height: 200px;
+        width: 100%;
+        background-size: contain;
+    }
+}
