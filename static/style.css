@@ -114,6 +114,29 @@ h4 {
     background-repeat: no-repeat;
 }
 
+.grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid .orgimg {
+    width: 150px;
+    height: 150px;
+}
+
+.grid h4 {
+    width: 200px;
+}
+
 @media only screen and (max-width: 768px) {
     .head {
         flex-direction: column;
