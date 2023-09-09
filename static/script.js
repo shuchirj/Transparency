@@ -19,6 +19,20 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
 $(document).ready(function(){
 
+  let inputs = document.getElementsByTagName("input")
+  let inputsArray = Array.from(inputs)
+  inputsArray.forEach((input) => {
+    input.addEventListener('change', function(){
+      console.log(input, input.id, $("#other_radio").checked)
+    if (input.id == "other_radio" && input.checked == true) {
+      $("#other_text").css("display", "block")
+    }
+    else if (!document.getElementById("other_radio").checked) {
+      $("#other_text").css("display", "none")
+    }
+    })
+  })
+
     let cards = document.getElementsByClassName('card')
     let cardsArray = Array.from(cards)
     cardsArray.forEach((card) => {

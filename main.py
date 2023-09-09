@@ -18,6 +18,10 @@ def index():
         response = webhook.execute()
         return redirect("/?msg=Your message has been sent!")
 
+@app.route("/request")
+def request():
+    return render_template("request.html")
+
 @app.route("/old")
 def old():
     return render_template("old.html")
