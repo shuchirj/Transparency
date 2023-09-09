@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 
-h1, h2, h3, h4, h5, h6, p, a, button, a:visited, li, label {
+h1, h2, h3, h4, h5, h6, p, a, button, a:visited, li, label, .success, small {
     font-family: 'Space Mono', monospace;
     color: white
 }
+
 
 /* format text inputs */
 input[type=text], input[type=email], input[type=password], input[type=number], input[type=tel], input[type=date], input[type=time], input[type=datetime-local], input[type=month], input[type=week], input[type=url], input[type=search], input[type=color], textarea {
@@ -24,7 +25,6 @@ input[type=radio], input[type=checkbox] {
     border-radius: 4px;
     color: #fff;
     padding: 10px;
-    width: 25%;
     box-sizing: border-box;
     font-family: 'Space Mono', monospace;
 }
@@ -46,6 +46,15 @@ button:hover {
     background-color: #fff;
     color: #000;
     cursor: pointer;
+}
+
+/* format success banner */
+.success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
 }
 
 
@@ -211,5 +220,9 @@ h4 {
         height: 200px;
         width: 100%;
         background-size: contain;
+    }
+
+    input[type=text], input[type=email], input[type=password], input[type=number], input[type=tel], input[type=date], input[type=time], input[type=datetime-local], input[type=month], input[type=week], input[type=url], input[type=search], input[type=color], textarea, button {
+        width: 100% !important;
     }
 }

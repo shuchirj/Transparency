@@ -20,6 +20,17 @@
 </head>
 
 <body>
+    <!-- show flashed messages -->
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="success" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endwith %}
+
     <section class="section" style="margin-top: 20px;">
         <div class="head">
             <div class="subhead">
@@ -30,25 +41,27 @@
     </section>
 
     <section class="section">
-        <form>
-            <label for="name">Full Name</label><br>
+        <form method="post" action="/request">
+            <label for="name">Full Name <span style="color:red">*</span></label><br>
             <input type="text" id="name" name="name" placeholder="Your name.." required><br><br>
 
-            <label for="email">Email</label><br>
+            <label for="email">Email <span style="color:red">*</span></label><br>
             <input type="email" id="email" name="email" placeholder="Your email.." required><br><br>
 
-            <label for="type">Type of Work</label>
-            <div style="display: flex; gap: 2px; margin-top: 10px;"><input type="radio" name="type" value="website" style="width: fit-content;"><p style="margin: 0;">Website</p></div>
-            <div style="display: flex; gap: 2px;"><input type="radio" id="other_radio" name="type" value="other" style="width: fit-content;"><p style="margin: 0;">other</p></div>
+            <label for="type">Type of Work <span style="color:red">*</span></label>
+            <div style="display: flex; gap: 2px; margin-top: 10px;"><input type="radio" name="type" value="Website" style="width: fit-content;" required><p style="margin: 0;">Website</p></div>
+            <div style="display: flex; gap: 2px;"><input type="radio" name="type" value="Mobile App" style="width: fit-content;" required><p style="margin: 0;">Mobile App</p></div>
+            <div style="display: flex; gap: 2px;"><input type="radio" id="other_radio" name="type" value="other" style="width: fit-content;" required><p style="margin: 0;">other</p></div>
             <br>
             <div id="other_text" style="display: none;">
-                <label for="other">Other</label><br>
+                <label for="other">Other <span style="color:red">*</span></label><br>
                 <input type="text" id="other" name="other" placeholder="Other"><br><br>
             </div>
             <br>
+            <label for="message">Message <span style="color:red">*</span></label><br>
             <textarea name="message" id="message" cols="30" rows="5" placeholder="Message" required></textarea><br><br>
             
-            <label for="compensation">Compensation</label><br>
+            <label for="compensation">Compensation <span style="color:red">*</span></label><br>
             <input type="text" id="compensation" name="compensation" placeholder="Compensation" required><br><br>
 
             <button type="submit">Submit</button>
