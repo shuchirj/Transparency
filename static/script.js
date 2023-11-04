@@ -19,31 +19,39 @@ const animateCSS = (element, animation, prefix = 'animate__') =>
 
 $(document).ready(function(){
 
-  let inputs = document.getElementsByTagName("input")
-  let inputsArray = Array.from(inputs)
-  inputsArray.forEach((input) => {
-    input.addEventListener('change', function(){
-      console.log(input, input.id, $("#other_radio").checked)
-    if (input.id == "other_radio" && input.checked == true) {
-      $("#other_text").css("display", "block")
-    }
-    else if (!document.getElementById("other_radio").checked) {
-      $("#other_text").css("display", "none")
-    }
-    })
-  })
-
-    let cards = document.getElementsByClassName('card')
-    let cardsArray = Array.from(cards)
-    cardsArray.forEach((card) => {
-        let $elem = $(card)
-        $elem.css('opacity', 0)
-    })
-    
     $(window).on('scroll', function(){
-        let cards = document.getElementsByClassName('card')
+        let cards = []
+        let h1 = document.getElementsByTagName('h1') 
+        let h2 = document.getElementsByTagName("h2") 
+        let h3 = document.getElementsByTagName("h3")
+        let h4 = document.getElementsByTagName("h4")
+        let h5 = document.getElementsByTagName("h5")
+        let h6 = document.getElementsByTagName("h6")
+        let p = document.getElementsByTagName("p")
+        let a = document.getElementsByTagName("a")
+        let li = document.getElementsByTagName("li")
+        let span = document.getElementsByTagName("span")
+        let button = document.getElementsByTagName("button")
+        let input = document.getElementsByTagName("input")
+        let small = document.getElementsByTagName("small")
+        // for (let i = 0; i < h1.length; i++) {cards.push(h1[i])}
+        // for (let i = 0; i < h2.length; i++) {cards.push(h2[i])}
+        // for (let i = 0; i < h3.length; i++) {cards.push(h3[i])}
+        // for (let i = 0; i < h4.length; i++) {cards.push(h4[i])}
+        // for (let i = 0; i < h5.length; i++) {cards.push(h5[i])}
+        // for (let i = 0; i < h6.length; i++) {cards.push(h6[i])}
+        // for (let i = 0; i < p.length; i++) {cards.push(p[i])}
+        // for (let i = 0; i < a.length; i++) {cards.push(a[i])}
+        // for (let i = 0; i < li.length; i++) {cards.push(li[i])}
+        // for (let i = 0; i < span.length; i++) {cards.push(span[i])}
+        // for (let i = 0; i < button.length; i++) {cards.push(button[i])}
+        // for (let i = 0; i < input.length; i++) {cards.push(input[i])}
+        // for (let i = 0; i < small.length; i++) {cards.push(small[i])}
+
+        console.log(cards)
         let cardsArray = Array.from(cards)
-        cardsArray.forEach((card) => {
+        for (let i=0; i<cardsArray.length; i++) {
+            let card = cardsArray[i]
             let $elem = $(card)
             let $window = $(window)
             var docViewTop = $window.scrollTop();
@@ -53,9 +61,35 @@ $(document).ready(function(){
             if (elemBottom < docViewBottom) {
                 $elem.css('opacity', 1)
                 if ($(card).hasClass('already_animated')) return
-                animateCSS(card, 'jackInTheBox')
+                let textContent = card.textContent
+                let all = []
+                for (let j=0; j<textContent.length; j++) {
+                    let letter = textContent[j]
+                    let t
+                    if (letter === " ") {
+                        t = "&nbsp"
+                        all.push(t)
+                    }
+                    else {
+                        t = letter
+                        all.push(t)
+                    }
+                }
+                card.innerHTML = ""
+                for (let j=0; j<all.length; j++) {
+                    let letter = all[j]
+                    let span = document.createElement('span')
+                    span.innerHTML = letter
+                    span.setAttribute("style", `--i:${j}`)
+                    card.appendChild(span)
+                }
+                $(card).addClass("letter")
+
+                console.log("animated", card)
                 $(card).addClass('already_animated')
             }
-        })
+        }
+
     });
+
 })

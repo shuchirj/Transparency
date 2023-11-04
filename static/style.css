@@ -1,51 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-h1, h2, h3, h4, h5, h6, p, a, button, a:visited, li, label, .success, small {
-    font-family: 'Space Mono', monospace;
-    color: white
+
+.lePeek span { animation-name: lePeek }
+@keyframes lePeek {
+    25% {  transform: rotateX(30deg) translateY(10px) rotate(-13deg); }
+    50% { transform: translateY(-22px) rotate(3deg) scale(1.1);  }
+}
+
+h3, h4, h5, h6, p, a, button, a:visited, li, label, .success, small {
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+h1, h2 {
+    font-family: 'Roboto Mono', monospace;
+    color: #75dab4;
 }
 
 
 /* format text inputs */
 input[type=text], input[type=email], input[type=password], input[type=number], input[type=tel], input[type=date], input[type=time], input[type=datetime-local], input[type=month], input[type=week], input[type=url], input[type=search], input[type=color], textarea {
     background-color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #75dab4;
     border-radius: 4px;
     color: #fff;
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* format radios and checkboxes */
 input[type=radio], input[type=checkbox] {
     background-color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #75dab4;
     border-radius: 4px;
     color: #fff;
     padding: 10px;
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* format buttons */
 button {
-    background-color: #000;
-    border: 1px solid #fff;
+    background-color: #75dab4;
     border-radius: 4px;
-    color: #fff;
+    color: black;
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    transition: 500ms;
+    border: none;
 }
 
 /* button hover state */
 button:hover {
-    background-color: #fff;
-    color: #000;
+    background-color: #000;
+    color: white;
     cursor: pointer;
+    border: none;
+    transition: 500ms;
 }
 
 /* format success banner */
@@ -59,7 +75,7 @@ button:hover {
 
 
 html {
-    background-color: #000;
+    background-color: #0c0f16;
 }
 
 html, body {
@@ -103,7 +119,7 @@ a {
 }
 
 a:hover {
-    color: #ccc;
+    color: #75dab4;
 }
 
 a:hover .matrix-icon {
@@ -188,6 +204,18 @@ h4 {
 
 .grid h4 {
     width: 200px;
+}
+
+.orgimg {
+    scale: 0.8
+}
+
+.scalemin {
+    scale: 0.9
+}
+
+.noscale {
+    scale: 1;
 }
 
 @media only screen and (max-width: 768px) {
