@@ -65,7 +65,7 @@ def requestwork():
 
     s = smtplib.SMTP('smtp-relay.brevo.com', 587)
     s.starttls()
-    s.login("shuchir.jain@gmail.com", "xsmtpsib-118c982ec22b8aab7f0a81757f84855189d0e81f0b4feb42254e51675c3cfbf2-J1vYnTGMwcOkxEgQ")
+    s.login("shuchir.jain@gmail.com", "xsmtpsib-118c982ec22b8aab7f0a81757f84855189d0e81f0b4feb42254e51675c3cfbf2-kL5PM0RabYqhZNzg")
     s.sendmail(from_email, to_email, msg.as_string())
     s.quit()
 

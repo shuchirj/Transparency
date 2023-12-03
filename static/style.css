@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 
+
 .lePeek span { animation-name: lePeek }
 @keyframes lePeek {
     25% {  transform: rotateX(30deg) translateY(10px) rotate(-13deg); }
@@ -9,12 +10,16 @@
 }
 
 h3, h4, h5, h6, p, a, button, a:visited, li, label, .success, small {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "malaga", serif;
+    font-weight: 500;
+    font-style: normal;
     color: white;
 }
 
 h1, h2 {
-    font-family: 'Roboto Mono', monospace;
+    font-family: "malaga", serif;
+    font-weight: 700;
+    font-style: normal;
     color: #75dab4;
 }
 
@@ -28,7 +33,9 @@ input[type=text], input[type=email], input[type=password], input[type=number], i
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "malaga", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* format radios and checkboxes */
@@ -39,7 +46,9 @@ input[type=radio], input[type=checkbox] {
     color: #fff;
     padding: 10px;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "malaga", serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 /* format buttons */
@@ -50,7 +59,9 @@ button {
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    font-family: "malaga", serif;
+    font-weight: 500;
+    font-style: normal;
     transition: 500ms;
     border: none;
 }
@@ -116,9 +127,11 @@ body {
 a {
     text-decoration: none;
     border-bottom: 1px solid #ffffff;
+    transition: 250ms;
 }
 
 a:hover {
+    transition: 250ms;
     color: #75dab4;
 }
 
@@ -216,6 +229,12 @@ h4 {
 
 .noscale {
     scale: 1;
+}
+
+.flex {
+    display: flex;
+    gap: 10px;
+    width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
