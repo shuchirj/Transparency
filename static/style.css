@@ -9,15 +9,40 @@
     50% { transform: translateY(-22px) rotate(3deg) scale(1.1);  }
 }
 
+h1 {
+    font-size: 2.3em;
+}
+
+h2 {
+    font-size: 1.8em;
+}
+
+h3 {
+    font-size: 1.47em;
+}
+
+h4, p, a {
+    font-size: 1.3em;
+}
+
+h5 {
+    font-size: 1.13em;
+}
+
+h6 {
+    font-size: 0.97em;
+}
+
+
 h3, h4, h5, h6, p, a, button, a:visited, li, label, .success, small {
-    font-family: "malaga", serif;
-    font-weight: 500;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
     font-style: normal;
     color: white;
 }
 
 h1, h2 {
-    font-family: "malaga", serif;
+    font-family: 'Afacad', sans-serif;
     font-weight: 700;
     font-style: normal;
     color: #75dab4;
@@ -33,8 +58,8 @@ input[type=text], input[type=email], input[type=password], input[type=number], i
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: "malaga", serif;
-    font-weight: 500;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -46,8 +71,8 @@ input[type=radio], input[type=checkbox] {
     color: #fff;
     padding: 10px;
     box-sizing: border-box;
-    font-family: "malaga", serif;
-    font-weight: 500;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -59,8 +84,8 @@ button {
     padding: 10px;
     width: 25%;
     box-sizing: border-box;
-    font-family: "malaga", serif;
-    font-weight: 500;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 400;
     font-style: normal;
     transition: 500ms;
     border: none;
