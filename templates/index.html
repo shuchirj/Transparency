@@ -5,334 +5,243 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shuchir Jain</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script defer data-domain="shuchir.dev" src="https://plausible.shuchir.dev/js/script.outbound-links.js"></script>
     <script async src="https://umami.shuchir.dev/script.js" data-website-id="f8f5f396-6e1c-47c4-b966-d295c71a76de"></script>
     <link rel="canonical" href="https://shuchir.dev/" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="/static/script.js"></script>
     <style>html {scroll-behavior: smooth;}</style>
+    <link rel="stylesheet" href="/static/style.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="/static/cssanimation.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/uhx4bkb.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/animatecss/3.5.2/animate.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad&family=Roboto+Mono&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
 
-<body class="pt-[40px] md:pt-[75px] pl-[30px] md:pl-[125px]">
+<body>
     <script>
-    new WOW().init();
-    </script>
+        new WOW().init();
+        </script>
 
-    <h1 class="mb-0 wow fadeInLeft">Shuchir Jain</h1>
-    <p class="mb-2 wow fadeInLeft">Engineer and Software Developer</p> 
-    
-    <div class="flex flex-wrap flex-row gap-8">
-        <a class="wow fadeInRightBig" target="_blank" href="//github.com/CoolCoderSJ"><i class="fa-brands fa-github"></i> CoolCoderSJ</a>
-        <a class="wow fadeInRightBig" target="_blank" href="mailto:hi@shuchir.dev"><i class="fa-solid fa-envelope"></i> hi@shuchir.dev</a>
-    </div>
+    <section class="sectionhead wow fadeInUp">
+        <div class="head">
+            <img src="https://avatars.githubusercontent.com/u/53063247?v=4" class="pfp">
+            <div class="subhead">
+                <h1 class="">Shuchir Jain</h1>
+                <h3 class="">An avid developer interested in engineering and photography.</h3>
+            </div>
+        </div>
 
-<div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="socials wow fadeInUp">
+            <a data-umami-event="outbound-link" data-umami-event-link="resume" href="/resume" target="_blank">View My Resume <i class="fa-solid fa-arrow-right tilt"></i></a>
+            <a class="" data-umami-event="outbound-link" data-umami-event-link="mailto hi@shuchir.dev" href="mailto:hi@shuchir.dev" target="_blank"><i class="fa-regular fa-envelope"></i> hi@shuchir.dev</a>
+            <a class="" data-umami-event="outbound-link" data-umami-event-link="github.com/CoolCoderSJ" href="//github.com/CoolCoderSJ" target="_blank"><i class="fa-brands fa-github"></i> @CoolCoderSJ</a>
+            <a class="" data-umami-event="outbound-link" data-umami-event-link="discord.com/users/744921397582888991" href="//discord.com/users/744921397582888991" target="_blank"><i class="fa-brands fa-discord"></i> @snoweo</a>
+            <a class="" data-umami-event="outbound-link" data-umami-event-link="matrix.to/#/@" href="//matrix.to/#/@coolcodersj:beeper.com" target="_blank"><span><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Matrix_icon.svg/768px-Matrix_icon.svg.png?20210502154855" class="matrix-icon"></span> @coolcodersj:beeper.com</a>
+        </div>
+    </section>
 
-    <div class="w-full">
-    <h3 class="mt-16 wow fadeInLeft">Projects</h3>
-    <div class="grid grid-cols-1 md:grid-cols-2-sm w-screen ">
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2024</p>
-        <div class="project wow fadeInUp">
-            <h5>organizeAIO</h5>
-            <h6>An event organization tool for hackathon organizers. Featuring rich attendee management, checkin, customizable registration form, public pages, projects, judging, public schedules, and more.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/organizeAIO">GitHub</a> 
-                <a target="_blank" href="https://organizeaio.xyz">Visit</a>
+    <section class="section wow fadeInUp">
+        <h1>Work Experience</h1>
+        <br><br>
+        <div class="org wow fadeInLeft">
+            <div class="orgimg" style="background-image: url('https://www.peeblesfire.org/uploads/3/4/1/0/34104512/published/peebles1.jpg?1537494755'); width: 150px"></div>
+            <div>
+                <h2 style="margin-bottom: 7px;">Peebles Volunteer Fire Department</h2>
+                <h4>Tech Assistant &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; JUN 2023 - Present</h4>
+                <p style="margin-top: 25px;">At the PDVFC, I'm currently helping modernize the website as well as migrate the system used for emails.</p>
             </div>
         </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-16">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>Citirides</h5>
-            <h6 class="mb-2 text-black"><b>Freelance / Project on Contract</b></h6>
-            <h6>Citirides is a now-deprecated service that let users import their rides from Citibike into their Strava profile. Citirides called on Lyft's internal APIs to pull data that it then dumped into Strava.</h6></div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>PicoPasswds</h5>
-            <h6>An experiment in cybersecurity. When you insert a raspberry pi pico (or a rubber ducky) into a laptop with this script, the script automatically grabs your chrome passwords, decrypts them, and sends them in a notification.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://oshwlab.com/shuchirj/nfc-business-card">View Schematic and Design</a> 
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg" style="background-image: url('https://static.wixstatic.com/media/4be238_70940ed42f9f4586844480cfa8985430~mv2.png/v1/fill/w_149,h_99,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pendemer%20productions.png'); width: 150px"></div>
+            <div>
+                <h2 style="margin-bottom: 7px;">Pendemer Productions</h2>
+                <h4>Tech Assistant &nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp; JAN 2023 - MAR 2023</h4>
+                <p style="margin-top: 25px;">At Pendemer Productions, I helped improve how tickets are issued as well as fixed some bugs with their website.</p>
             </div>
         </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>PCB Business Cards</h5>
-            <h6>My first attempt at PCB (printed circuit board) fabrication. The project consists of a business card that uses NFC technology. NFC is near field communication, and it means when the card is tapped to a phone, the phone receives (and might open) a custom link stored on the card.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/Self-Destructing-Passwords">GitHub</a> 
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>WheresMyFlight</h5>
-            <h6>A flight tracker that features offline support, SMS notifications, boarding passes, bag tracking, and live flight tracking.</h6>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>Crinkle</h5>
-            <h6>Another feature rich URL shortener featuring geotracking, qr codes, browser/os/device collection, referrer collection, custom domains, and more.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/Crinkle">GitHub</a> 
-                <a target="_blank" href="https://url.shuchir.dev">Visit</a>
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>HCGateway</h5>
-            <h6>A platform to sync Android's Health Connect data to the cloud letting you access it via a REST API from anywhere. Also acts as a universal API for multiple health apps like Fitbit, Strava, Samsung Health, etc.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/HCGateway">GitHub</a> 
-                <a target="_blank" href="https://hcgateway.shuchir.dev">View API Docs</a>
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <div class="project wow fadeInUp">
-            <h5>Motion Lights</h5>
-            <h6>Code for an API based ESP8266 board that turns my room lights into motion activated lights.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/Motion-Lights">Code and Demo</a> 
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <div class="project wow fadeInUp">
-            <h5>Climalearn</h5>
-            <h6>Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it. Aggregates data directly from sources like NASA, NOAA, and Google's Project Sunroof.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/Climalearn">GitHub</a> 
-                <a target="_blank" href="https://climalearn.shuchir.dev">Visit</a>
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <div class="project wow fadeInUp">
-            <h5>StudentMate</h5>
-            <h6>An AI-powered homework assistant. StudentMate finds assignments from Blackboard (an LMS) homepages using AI and adds them to a todo list.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/Studentmate">GitHub</a> 
-                <a target="_blank" href="https://studentmate.shuchir.dev">Visit</a>
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2021</p>
-        <div class="project wow fadeInUp">
-            <h5>MyT1D</h5>
-            <h6>A mobile application to help type 1 diabetic patients manage their diabetes easier. Featuring Dexcom integration, meal management and insulin calculation, pen tracking, and more.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/MyT1D">GitHub</a> 
-            </div>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-11/12 md:w-3/4 mb-10">
-        <p class="wow fadeInUp">2021</p>
-        <div class="project wow fadeInUp">
-            <h5>SearchDeck</h5>
-            <h6>A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.</h6>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://github.com/CoolCoderSJ/SearchDeck">GitHub</a> 
-            </div>
-        </div>
-    </div>
-    
-    </div></div>
+    </section>
 
-    <div></div>
+    <section class="section wow fadeInUp">
+        <h1>Volunteer Work</h1>
+        <br><br>
+        <div class="grid">
+        <div>
+            <div class="orgimg" style="background-image: url('https://industeeltech.org/images/logo.png');"></div>
+            <h2>IndusteelTech</h2>
+            <h4>Co-Founder, Co-CEO, CTO, CFO</h4>
+            <a data-umami-event="outbound-link" data-umami-event-link="industeeltech" href="//industeeltech.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+        </div>
+        <div>
+            <div class="orgimg" style="background-image: url('/static/images/mathlings.svg');"></div>
+            <h2>Mathlings</h2>
+            <h4>Administrative Officer</h4>
+            <a data-umami-event="outbound-link" data-umami-event-link="mathlings" href="//mathlings.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+        </div>
+        <div>
+            <div class="orgimg" style="background-image: url('https://static.wixstatic.com/media/dac587856ca34b6fb51697ae749cc6b5.jpg/v1/fill/w_232,h_232,usm_1.20_1.00_0.01/file.webp');"></div>
+            <h2>Palettech</h2>
+            <h4>Co-Founder, Co-COO</h4>
+            <a data-umami-event="outbound-link" data-umami-event-link="palettech" href="//palettech.org" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+        </div>
+        <div>
+            <div class="orgimg" style="background-image: url('https://images.squarespace-cdn.com/content/v1/5f6433bbe5c42068112d6f4f/1600630559004-YTH3TQWPBEO3GOOVXP7H/steelcitylogo.png?format=1500w'); width: 200px"></div>
+            <h2>Steel City Codes</h2>
+            <h4>Regional Director</h4>
+            <a data-umami-event="outbound-link" data-umami-event-link="scc" href="https://steelcitycodes.org/" target="_blank">Learn More <i class="fa-solid fa-arrow-right tilt"></i></a>
+        </div>
+        </div>
+    </section>
 
-    <div>
-    <h3 class="mt-16 wow fadeInLeft">Awards</h3>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <h5><b>1st Place (States)</b> from Pennsylvania Junior Academy of Science</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <h5><b>1st Place (Regionals)</b> from Pennsylvania Junior Academy of Science</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2023</p>
-        <h5><b>Directors Award</b> from Pennsylvania Junior Academy of Science</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>Top 300 Researchers Nationwide</b> from Broadcom</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>2nd Place (States)</b> from Pennsylvania Junior Academy of Science</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>1st Place (Regionals)</b> from PA Media and Design</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>1st Place Winner</b> from Steel City Hacks Hackathon</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>2nd Place</b> from Pittsburgh Regional Science and Engineering Fair</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <h5><b>1st Place (Regionals)</b> from Pennsylvania Junior Academy of Science</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2021</p>
-        <h5><b>2nd Place (States)</b> from PA Media and Design</h5>
-    </div>
-    <div class="wow fadeInUp flex gap-4 md:gap-12 2xl:gap-24 w-[90%] mb-10">
-        <p class="wow fadeInUp">2021</p>
-        <h5><b>1st Place (Regionals)</b> from PA Media and Design</h5>
-    </div>
-
-    </div>
-
-    <div>
-    <div>
-    <h3 class="mt-16 wow fadeInRight">Features</h3>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2022</p>
-        <div class="project wow fadeInUp">
-            <h5>Three NAI freshmen named in top science competition</h5>
-            <div class="projectlinks flex flex-wrap flex-row gap-6">
-                <a target="_blank" href="https://triblive.com/local/three-nai-freshmen-named-in-top-science-competition/">Read</a> 
+    <section class="section">
+        <h1>Projects</h1>
+        <h3>Here's everything I've made.</h3>
+        <div class="org wow fadeInLeft">
+            <div class="orgimg noscale" style="background-image: url('/static/images/mockups/picopasswds.png')"></div>
+            <div>
+                <h2>PicoPasswds</h2>
+                <p>An experiment in cybersecurity. When you insert a raspberry pi pico (or a rubber ducky) into a laptop with this script, the script automatically grabs your chrome passwords, decrypts them, and sends them to me in a notification.</p>
+                <a data-umami-event="outbound-link" data-umami-event-link="picopasswds" href="//github.com/CoolCoderSJ/Self-Destructing-Passwords" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
             </div>
         </div>
-    </div>
-
-    </div>
-    <br>
-    <div>
-    <h3 class="mt-16 wow fadeInRight">Work Experience</h3>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2023 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Peebles Volunteer Fire Dept.</h5>
-            <h6 class="mb-2 text-black"><b>Contractor @ Pittsburgh, PA</b></h6>
-            <h6>At the PDVFC, I am currently helping modernize their website.</h6>
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg" style="background-image: url('/static/images/pcb.png')"></div>
+            <div>
+                <h2>NFC Business Cards</h2>
+                <p>My first attempt at PCB (printed circuit board) fabrication. The project consists of a business card that uses NFC technology. NFC is near field communication, and it means when the card is tapped to a phone, the phone receives (and might open) a custom link stored on the card. </p>
+                <a data-umami-event="outbound-link" data-umami-event-link="nfc-business-card" href="//oshwlab.com/shuchirj/nfc-business-card" target="_blank">View Schematic and Design <i class="fa-solid fa-arrow-right tilt"></i></a>
+            </div>
         </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2023 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Pendemer Productions</h5>
-            <h6 class="mb-2 text-black"><b>Contractor @ Pittsburgh, PA</b></h6>
-            <h6>I help update online tickets and maintain the website.</h6>
-        </div>
-    </div>
-    </div>
-
-    <br>
-    <div>
-        <h3 class="mt-16 wow fadeInRight">Certifications</h3>
-        <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-            <p class="wow fadeInUp">2024</p>
-            <div class="project wow fadeInUp">
-                <h5>College Algebra with Python</h5>
-                <div class="projectlinks flex flex-wrap flex-row gap-6">
-                    <a target="_blank" href="https://www.freecodecamp.org/certification/ShuchirJain/college-algebra-with-python-v8">View</a> 
+        <div class="org wow fadeInLeft">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/wio.png');"></div>
+            <div>
+                <h2>Motion Controlled Lights</h2>
+                <p>An ESP8266 API based board that looks at motion in and out of my room and turns my room's lights on and off accordingly. It tracks how many people are in the room, which means the lights won't turn off until everyone leaves.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="motion-lights-gh" href="//github.com/CoolCoderSJ/Motion-Lights" target="_blank">View Details <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="motion-lights-video" href="https://github-production-user-asset-6210df.s3.amazonaws.com/53063247/258203569-f08c90f3-39ea-4d36-9513-83d9adacc334.mp4" target="_blank">View Demo <i class="fa-solid fa-arrow-right tilt"></i></a>
                 </div>
             </div>
         </div>
-        <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-            <p class="wow fadeInUp">2022</p>
-            <div class="project wow fadeInUp">
-                <h5>Front End Development Libraries</h5>
-                <div class="projectlinks flex flex-wrap flex-row gap-6">
-                    <a target="_blank" href="https://www.freecodecamp.org/certification/ShuchirJain/front-end-development-libraries">View</a> 
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/organizeaio.png')"></div>
+            <div>
+                <h2>organizeAIO</h2>
+                <p>The easiest way for event organizers to get started with their event. Features rich attendee management, customizable registration forms, public schedules, ability to send email blasts, project collection and gallery, a panel for judges, and a public page on your own subdomain. </p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="organizeaio - github" href="//github.com/CoolCoderSJ/organizeAIO" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="organizeaio - live" href="//organizeaio.xyz" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
                 </div>
             </div>
         </div>
-        <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-            <p class="wow fadeInUp">2022</p>
-            <div class="project wow fadeInUp">
-                <h5>Back End Development and APIs</h5>
-                <div class="projectlinks flex flex-wrap flex-row gap-6">
-                    <a target="_blank" href="https://www.freecodecamp.org/certification/ShuchirJain/back-end-development-and-apis">View</a> 
+        <div class="org wow fadeInLeft">
+            <div class="orgimg" style="background-image: url('/static/images/mockups/hcgateway.png')"></div>
+            <div>
+                <h2>HCGateway</h2>
+                <p>A platform to sync Android's Health Connect data to the cloud letting you access it via a REST API from anywhere. Also acts as a universal API for multiple health apps like Fitbit, Strava, Samsung Health, etc.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="hcgateway - github" href="//github.com/CoolCoderSJ/HCGateway" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="hcgateway - live" href="//hcgateway.shuchir.dev" target="_blank">Visit API Docs <i class="fa-solid fa-arrow-right tilt"></i></a>
                 </div>
             </div>
         </div>
-        <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-            <p class="wow fadeInUp">2022</p>
-            <div class="project wow fadeInUp">
-                <h5>Scientific Computing with Python</h5>
-                <div class="projectlinks flex flex-wrap flex-row gap-6">
-                    <a target="_blank" href="https://www.freecodecamp.org/certification/ShuchirJain/scientific-computing-with-python-v7">View</a> 
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg noscale" style="background-image: url('/static/images/mockups/studentmate.png')"></div>
+            <div>
+                <h2>StudentMate</h2>
+                <p>An AI-powered homework assistant. StudentMate finds assignments from your LMS using AI and adds them to a todo list.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="studentmate - github" href="//github.com/CoolCoderSJ/StudentMate" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="studentmate - live" href="//studentmate.shuchir.dev" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
                 </div>
             </div>
         </div>
-    
-    </div>
-    </div>
-</div>
+        <div class="org wow fadeInLeft">
+            <div class="orgimg noscale" style="background-image: url('/static/images/mockups/wmf.png')"></div>
+            <div>
+                <h2>WheresMyFlight</h2>
+                <p>Another flight tracker that features offline support, SMS notifications, boarding passes, bag tracking, and live flight tracking.</p>
+            </div>
+        </div>
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg scalemin" style="background-image: url('/static/images/mockups/searchdeck.png')"></div>
+            <div>
+                <h2>SearchDeck</h2>
+                <p>A search engine compiler. Collects results from 4 different search engines and smartly compiles them onto one page.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="searchdeck - github" href="//github.com/CoolCoderSJ/SearchDeck" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="searchdeck - live" href="//searchdeck.coolcodersj.repl.co" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org wow fadeInLeft">
+            <div class="orgimg scalemin" style="background-image: url('https://ph-files.imgix.net/35e5f66a-23f7-461e-8d5c-ef8123cb1654.png?auto=compress&codec=mozjpeg&cs=strip&auto=format&fit=max&dpr=1')"></div>
+            <div>
+                <h2>Climalearn</h2>
+                <p>Easily see how climate change is adversely affecting the Earth and find out what you can do to stop it. Aggregates data directly from sources like NASA, NOAA, and Google's Project Sunroof.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="climalearn - github" href="//github.com/CoolCoderSJ/Climalearn" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="climalearn - live" href="//climalearn.shuchir.dev" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg noscale" style="background-image: url('/static/images/mockups/myt1d.png')"></div>
+            <div>
+                <h2>MyT1D</h2>
+                <p>A mobile application to help type 1 diabetic patients manage their diabetes easier. Featuring Dexcom integration, meal management and insulin calculation, pen tracking, and more.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="myt1d - github" href="//github.com/CoolCoderSJ/MyT1D" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="myt1d - github apk link" href="//github.com/CoolCoderSJ/MyT1D/releases/download/v1.0/MyT1D-bc1868ed908349b0aeba0df5ef3030f3-signed.apk" target="_blank">Install APK (Android) <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org wow fadeInLeft">
+            <div class="orgimg scalemin" style="background-image: url('https://sharex.shuchir.dev/u/tveZzG.png')"></div>
+            <div>
+                <h2>Crinkle</h2>
+                <p>Another feature rich URL shortener featuring geotracking, qr codes, browser/os/device collection, referrer collection, custom domains, and more.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="crinkle - github" href="//github.com/CoolCoderSJ/Crinkle" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                    <a data-umami-event="outbound-link" data-umami-event-link="crinkle - live" href="//url.shuchir.dev" target="_blank">Visit <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="org reverse wow fadeInRight">
+            <div class="orgimg" style="background-image: url('https://assets-global.website-files.com/6257adef93867e50d84d30e2/636e0a6a49cf127bf92de1e2_icon_clyde_blurple_RGB.png'); width: 200px;"></div>
+            <div>
+                <h2>Token Revoker</h2>
+                <p>A discord bot that continuously scans the server for leaked discord bot tokens and slack tokens and automatically revokes them.</p>
+                <div class="socials nopaddingleft">
+                    <a data-umami-event="outbound-link" data-umami-event-link="tokenrevoker - github" href="//github.com/CoolCoderSJ/TokenRevoker" target="_blank">View on Github <i class="fa-solid fa-arrow-right tilt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<div class="w-screen">
-    <h3 class="mt-16 wow fadeInLeft">Volunteer Service</h3>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2022 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Steel City Codes</h5>
-            <h6 class="mb-2 text-black"><b>Volunteer @ Pittsburgh, PA</b></h6>
-            <h6>At Steel City Codes, I teach middle schoolers a programming language once a week.</h6>
+    <section class="section wow fadeInUp">
+        <h1>Photography</h1>
+        <h3>I don't just code!</h3>
+        <div class="socials nopaddingleft">
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/astro/moon/8.png')"></div>
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/landscapes/7.jpg')"></div>
+        <div class="square" style="background-image: url('https://photography.shuchir.dev/images/collections/fireworks/1.jpg')"></div>
         </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2023 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Chesspire</h5>
-            <h6 class="mb-2 text-black"><b>CTO @ Pittsburgh, PA</b></h6>
-            <h6>At Chesspire, I've helped find sponsors for camps as well as maintain the website.</h6>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2022 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Palettech</h5>
-            <h6 class="mb-2 text-black"><b>Co-Founder, Co-COO</b></h6>
-            <h6>At Palettech, I help provide services like programming to those who need it.</h6>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp w-[138px]">2021 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>Mathlings</h5>
-            <h6 class="mb-2 text-black"><b>Administrative Officer, Director of Summer Camps, Curriculum Writer, In-Person Classes Coordinator @ Pittsburgh, PA</b></h6>
-            <h6>At Mathlings, I've helped run several successful summer camps, 6-week programs, and in-person programs to help teach advanced math to children. I've also written part of the curriculum.   </h6>
-        </div>
-    </div>
-    <div class="flex gap-4 md:gap-12 2xl:gap-24 w-full md:w-5/6 mb-10">
-        <p class="wow fadeInUp">2023 &mdash; Now</p>
-        <div class="project wow fadeInUp">
-            <h5>IndusteelTech</h5>
-            <h6 class="mb-2 text-black"><b>Co-Founder, CEO</b></h6>
-            <h6>At IndusteelTech, I managed and ran a successful hackathon called Hack the Grid. 60 participants showed up, and over $8k in prizes was given out.</h6>
-        </div>
-    </div>
-</div>
+        <br>
+        <a data-umami-event="outbound-link" data-umami-event-link="photography" href="//photography.shuchir.dev" target="_blank" style="font-size: 1.2em;">View More <i class="fa-solid fa-arrow-right tilt"></i></a>
+    </section>
+
 
     <br><br>
-    <link rel="stylesheet" href="/static/style2.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script> 
+    <script type="text/javascript" src="/static/cssanimation-gsap.js"></script>
+    <script type="text/javascript" src="/static/letteranimation.js"></script>
 </body>
 </html>
