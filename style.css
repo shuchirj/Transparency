@@ -1,0 +1,143 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+
+* {
+    transition: 500ms;
+}
+
+h1, h2 {
+    font-family: "major-mono-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3, h4, h5, h6, p, a, button, input {
+    font-family: "rokkitt", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 1.75em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h5 {
+    font-size: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h6 {
+    font-size: 0.8em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p, a {
+    font-size: 1.2em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#page {
+    opacity: 0;
+}
+
+.break {
+    height: 50px;
+}
+
+.break-m {
+    height: 150px;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+a:hover {
+    color: black;
+    text-decoration-style: wavy;
+}
+
+a span {
+    margin-bottom: 2px;
+}
+
+ion-icon {
+    font-size: 1.5em;
+    margin-bottom: 0;
+}
+
+.work-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.work-item img {
+    width: 100px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.volunteering .work-item {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.volunteering {
+    display: flex;
+    gap: 5px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.volunteering .work-item, .volunteering p {
+    margin-right: 45px;
+}
+
+.volunteering img {
+    width: 200px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 6px;
+}
