@@ -175,6 +175,11 @@ ion-icon {
     z-index: 10;
 }
 
+.no-enlarge .work-item:hover {
+    scale: 1;
+    cursor: default;
+}
+
 .v-w p {
     margin-top: 10px;
     margin-bottom: 15px;
@@ -256,4 +261,18 @@ ion-icon {
     object-fit: cover;
     border-radius: 6px;
     position: inherit;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.links a {
+    color: #d2d8fc;
+}
+
+.no-enlarge .work-item {
+    padding-bottom: 10px;
 }
