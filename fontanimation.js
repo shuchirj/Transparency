@@ -16,4 +16,4 @@ textWrapper.forEach(function(el) {
 })
 
 
-setTimeout(() => document.querySelector("#page").style.opacity = "1", 100);
+setTimeout(() => document.querySelector("#page").style.opacity = "1", 1750);
